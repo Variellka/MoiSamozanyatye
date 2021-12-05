@@ -122,6 +122,9 @@
   margin: 0 35px;
   max-width: 1160px;
   margin: auto;
+  &.mobile {
+    display: none;
+  }
   .border {
     width: 80px;
     height: 1px;
@@ -659,6 +662,9 @@
           max-width: 20%;
           display: flex;
           align-items: center;
+          .description {
+            display: none;
+          }
           &:nth-of-type(2n) {
             margin: 0 20px;
           }
@@ -924,6 +930,316 @@ footer {
         margin-bottom: 24px;
         .image {
           margin-right: 21px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  header, .main, .interface_content, .video, .benefits, .bonuses_content, .bank, .how-to-use, .focus, footer {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1160px) {
+  .light-paragraph {
+    font-size: 18px;
+  }
+  .additional-header {
+    font-size: 32px;
+  }
+  .button {
+    font-size: 18px;
+    padding: 18px 0;
+  }
+  .button-secondary {
+    span {
+      font-size: 16px;
+    }
+  }
+  .form_block {
+    .border {
+      height: 461px;
+      img {
+        height: 100%;
+      }
+    }
+    .form {
+      max-width: 368px;
+      padding: 24px;
+      .title {
+        font-size: 22px;
+      }
+      input {
+        font-size: 16px;
+      }
+    }
+  }
+  .main {
+    &_content {
+      padding-top: 64px;
+      .main_content_titleForm {
+        display: block;
+        .title-benefits {
+          margin-bottom: 96px;
+        }
+        h1 {
+          font-weight: 600;
+          font-size: 40px;
+          max-width: 100%;
+          text-align: center;
+          margin-bottom: 60px;
+          .normal, .bolder, .bold {
+            font-size: 40px;
+            text-align: center;
+          }
+          .bolder {
+            font-weight: normal;
+          }
+        }
+        ul {
+          display: flex;
+          justify-content: space-between;
+          li {
+            display: block;
+            text-align: center;
+            max-width: 26.5%;
+            font-size: 16px;
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+        .mobile-wrapper {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      &_benefits {
+        display: none;
+        &.mobile {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-bottom: 0;
+          margin: 0 auto;
+          .border {
+            transform: none;
+            margin: 32px auto;
+          }
+        }
+        &--item {
+          p:first-child {
+            font-size: 48px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  .map {
+    padding: 0;
+    margin-top: 120px;
+    &_content {
+      &_title {
+        font-size: 24px;
+        white-space: nowrap;
+      }
+      &--people {
+        max-width: 150px;
+        position: absolute;
+        &:last-of-type {
+          right: 20px;
+        }
+      }
+      div:nth-of-type(2n) {
+        margin: auto;
+        img {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+  .functions{
+    .description {
+      font-size: 20px;
+      margin-bottom: 64px;
+    }
+    &_items {
+      &--item {
+        flex-basis: 45%;
+        max-width: 45%;
+        .title {
+          font-size: 22px;
+        }
+        .light-paragraph {
+          font-size: 16px;
+        }
+        img {
+          margin-right: 25px;
+        }
+      }
+    }
+    .button-secondary {
+      margin-bottom: 80px;
+    }
+  }
+  .quote{
+    padding: 0 60px 118px 60px;
+    margin-top: 80px;
+      &_main {
+        font-size: 30px;
+        &::before {
+          left: -70px;
+        }
+      }
+    &_add {
+      font-size: 24px;
+      &::after {
+        right: -60px;
+      }
+    }
+  }
+  .interface {
+    .additional-header {
+      padding-top: 48px;
+    }
+    .title--additional {
+      font-size: 20px;
+    }
+    .description {
+      font-size: 14px;
+      padding-bottom: 48px;
+    }
+  }
+  .video {
+    &_content {
+      margin: 112px 0;
+    }
+    p {
+      font-size: 12px;
+      margin-top: 11px;
+    }
+    .additional-header {
+      margin-top: 10px;
+    }
+    &_content--items_video {
+      margin-left: 30px;
+    }
+  }
+  .benefits_content {
+    padding-top: 112px;
+    &__format {
+      padding-bottom: 112px;
+      border: none;
+      .or {
+        font-size: 20px;
+        width: 72px;
+        height: 72px;
+        padding: 23px 15px;
+      }
+      .light-paragraph {
+        font-size: 16px;
+      }
+    }
+    &__additional {
+      display: none;
+    }
+  }
+  .bonuses {
+    &_content {
+      div {
+        padding: 48px 0;
+        p {
+          font-size: 20px;
+          max-width: 400px;
+        }
+      }
+    }
+  }
+  .bank_content {
+    padding: 118px 0;
+    .light-paragraph {
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 688px;
+      margin: 0 auto 80px;
+    }
+    &--apibank {
+      flex-direction: column;
+      margin-bottom: 48px;
+      &-item {
+        flex-basis: 100%;
+        max-width: 100%;
+        &:first-child {
+          margin-right: 0;
+          margin-bottom: 24px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+    &--achievements {
+      &-item {
+        flex-wrap: wrap;
+        .wrapper {
+          max-width: 25%;
+          width: 150px;
+          height: 150px;
+          margin-right: 15px;
+          margin-bottom: 15px;
+          &:nth-of-type(2n) {
+            margin: 0;
+            margin-right: 20px;
+          }
+          .image {
+            max-width: 150px;
+            padding: 15px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .mobile-view {
+        .wrapper:nth-child(1) {
+          background: radial-gradient(50% 50% at 50% 50%, #214777 0%, #0F1E31 100%);
+        }
+        .wrapper:nth-child(2) {
+          background: radial-gradient(50% 50% at 50% 50%, #1A388D 0%, #1B1E5C 100%);
+        }
+        .wrapper:nth-child(3) {
+          background: radial-gradient(50% 50% at 50% 50%, #843495 0%, #49217F 100%);
+        }
+        .wrapper:nth-child(4) {
+          background: radial-gradient(50% 50% at 50% 50%, #2C9F67 0%, #1A633C 100%);
+        }
+      }
+    }
+  }
+  .how-to-use {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    &_content {
+      margin-top: 48px;
+      &_item {
+        .number {
+          font-size: 80px;
+          &::after {
+            width: 8px;
+            height: 8px;
+          }
+        }
+        .title {
+          font-size: 28px;
+          margin: 24px 0;
+        }
+        .light-paragraph {
+          font-size: 16px;
+        }
+        &:nth-of-type(2n) {
+          margin: 0;
         }
       }
     }

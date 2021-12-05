@@ -125,6 +125,9 @@
   max-width: 1160px;
   margin: auto;
 }
+.main_content_benefits.mobile {
+  display: none;
+}
 .main_content_benefits .border {
   width: 80px;
   height: 1px;
@@ -660,6 +663,9 @@
   display: flex;
   align-items: center;
 }
+.bank_content--achievements-item .wrapper .description {
+  display: none;
+}
 .bank_content--achievements-item .wrapper:nth-of-type(2n) {
   margin: 0 20px;
 }
@@ -923,6 +929,302 @@ footer .footer_content_item .pci {
 }
 footer .footer_content_item .pci .image {
   margin-right: 21px;
+}
+
+@media (max-width: 1200px) {
+  header, .main, .interface_content, .video, .benefits, .bonuses_content, .bank, .how-to-use, .focus, footer {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1160px) {
+  .light-paragraph {
+    font-size: 18px;
+  }
+
+  .additional-header {
+    font-size: 32px;
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 18px 0;
+  }
+
+  .button-secondary span {
+    font-size: 16px;
+  }
+
+  .form_block .border {
+    height: 461px;
+  }
+  .form_block .border img {
+    height: 100%;
+  }
+  .form_block .form {
+    max-width: 368px;
+    padding: 24px;
+  }
+  .form_block .form .title {
+    font-size: 22px;
+  }
+  .form_block .form input {
+    font-size: 16px;
+  }
+
+  .main_content {
+    padding-top: 64px;
+  }
+  .main_content .main_content_titleForm {
+    display: block;
+  }
+  .main_content .main_content_titleForm .title-benefits {
+    margin-bottom: 96px;
+  }
+  .main_content .main_content_titleForm h1 {
+    font-weight: 600;
+    font-size: 40px;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .main_content .main_content_titleForm h1 .normal, .main_content .main_content_titleForm h1 .bolder, .main_content .main_content_titleForm h1 .bold {
+    font-size: 40px;
+    text-align: center;
+  }
+  .main_content .main_content_titleForm h1 .bolder {
+    font-weight: normal;
+  }
+  .main_content .main_content_titleForm ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_content .main_content_titleForm ul li {
+    display: block;
+    text-align: center;
+    max-width: 26.5%;
+    font-size: 16px;
+  }
+  .main_content .main_content_titleForm ul li p {
+    font-size: 16px;
+  }
+  .main_content .main_content_titleForm .mobile-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_content_benefits {
+    display: none;
+  }
+  .main_content_benefits.mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+  .main_content_benefits.mobile .border {
+    transform: none;
+    margin: 32px auto;
+  }
+  .main_content_benefits--item p:first-child {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
+
+  .map {
+    padding: 0;
+    margin-top: 120px;
+  }
+  .map_content_title {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+  .map_content--people {
+    max-width: 150px;
+    position: absolute;
+  }
+  .map_content--people:last-of-type {
+    right: 20px;
+  }
+  .map_content div:nth-of-type(2n) {
+    margin: auto;
+  }
+  .map_content div:nth-of-type(2n) img {
+    margin-top: 40px;
+  }
+
+  .functions .description {
+    font-size: 20px;
+    margin-bottom: 64px;
+  }
+  .functions_items--item {
+    flex-basis: 45%;
+    max-width: 45%;
+  }
+  .functions_items--item .title {
+    font-size: 22px;
+  }
+  .functions_items--item .light-paragraph {
+    font-size: 16px;
+  }
+  .functions_items--item img {
+    margin-right: 25px;
+  }
+  .functions .button-secondary {
+    margin-bottom: 80px;
+  }
+
+  .quote {
+    padding: 0 60px 118px 60px;
+    margin-top: 80px;
+  }
+  .quote_main {
+    font-size: 30px;
+  }
+  .quote_main::before {
+    left: -70px;
+  }
+  .quote_add {
+    font-size: 24px;
+  }
+  .quote_add::after {
+    right: -60px;
+  }
+
+  .interface .additional-header {
+    padding-top: 48px;
+  }
+  .interface .title--additional {
+    font-size: 20px;
+  }
+  .interface .description {
+    font-size: 14px;
+    padding-bottom: 48px;
+  }
+
+  .video_content {
+    margin: 112px 0;
+  }
+  .video p {
+    font-size: 12px;
+    margin-top: 11px;
+  }
+  .video .additional-header {
+    margin-top: 10px;
+  }
+  .video_content--items_video {
+    margin-left: 30px;
+  }
+
+  .benefits_content {
+    padding-top: 112px;
+  }
+  .benefits_content__format {
+    padding-bottom: 112px;
+    border: none;
+  }
+  .benefits_content__format .or {
+    font-size: 20px;
+    width: 72px;
+    height: 72px;
+    padding: 23px 15px;
+  }
+  .benefits_content__format .light-paragraph {
+    font-size: 16px;
+  }
+  .benefits_content__additional {
+    display: none;
+  }
+
+  .bonuses_content div {
+    padding: 48px 0;
+  }
+  .bonuses_content div p {
+    font-size: 20px;
+    max-width: 400px;
+  }
+
+  .bank_content {
+    padding: 118px 0;
+  }
+  .bank_content .light-paragraph {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 688px;
+    margin: 0 auto 80px;
+  }
+  .bank_content--apibank {
+    flex-direction: column;
+    margin-bottom: 48px;
+  }
+  .bank_content--apibank-item {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .bank_content--apibank-item:first-child {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+  .bank_content--apibank-item p {
+    font-size: 18px;
+  }
+  .bank_content--achievements-item {
+    flex-wrap: wrap;
+  }
+  .bank_content--achievements-item .wrapper {
+    max-width: 25%;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+  .bank_content--achievements-item .wrapper:nth-of-type(2n) {
+    margin: 0;
+    margin-right: 20px;
+  }
+  .bank_content--achievements-item .wrapper .image {
+    max-width: 150px;
+    padding: 15px;
+  }
+  .bank_content--achievements-item .wrapper .image img {
+    width: 100%;
+  }
+  .bank_content--achievements .mobile-view .wrapper:nth-child(1) {
+    background: radial-gradient(50% 50% at 50% 50%, #214777 0%, #0F1E31 100%);
+  }
+  .bank_content--achievements .mobile-view .wrapper:nth-child(2) {
+    background: radial-gradient(50% 50% at 50% 50%, #1A388D 0%, #1B1E5C 100%);
+  }
+  .bank_content--achievements .mobile-view .wrapper:nth-child(3) {
+    background: radial-gradient(50% 50% at 50% 50%, #843495 0%, #49217F 100%);
+  }
+  .bank_content--achievements .mobile-view .wrapper:nth-child(4) {
+    background: radial-gradient(50% 50% at 50% 50%, #2C9F67 0%, #1A633C 100%);
+  }
+
+  .how-to-use {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .how-to-use_content {
+    margin-top: 48px;
+  }
+  .how-to-use_content_item .number {
+    font-size: 80px;
+  }
+  .how-to-use_content_item .number::after {
+    width: 8px;
+    height: 8px;
+  }
+  .how-to-use_content_item .title {
+    font-size: 28px;
+    margin: 24px 0;
+  }
+  .how-to-use_content_item .light-paragraph {
+    font-size: 16px;
+  }
+  .how-to-use_content_item:nth-of-type(2n) {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
