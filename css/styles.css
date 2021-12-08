@@ -159,10 +159,19 @@
 }
 .header_content_logo {
   margin: auto 0;
+  max-width: 224px;
+  max-height: 44px;
+}
+.header_content_logo img {
+  width: 100%;
+  height: 100%;
 }
 .header_content_options {
   margin: auto 0;
   display: flex;
+}
+.header_content_options.mobile {
+  display: none;
 }
 .header_content_options p.option {
   margin-right: 24px;
@@ -186,6 +195,9 @@
   height: 40px;
   padding: 10px 40px;
   font-size: 14px;
+}
+.header_content_buttons_mobile {
+  display: none;
 }
 
 .main {
@@ -729,6 +741,9 @@
   margin: 0 auto;
   padding-top: 152px;
 }
+.focus_content .additional-header.mobile {
+  display: none;
+}
 .focus_content_item {
   text-align: center;
 }
@@ -759,6 +774,8 @@
 .focus_content_item:last-child h3 {
   text-align: center;
   margin-bottom: 80px;
+  margin-top: 80px;
+  margin-top: 80px;
 }
 .focus_content_item .questions {
   padding-bottom: 64px;
@@ -935,6 +952,10 @@ footer .footer_content_item .pci .image {
   header, .main, .interface_content, .video, .benefits, .bonuses_content, .bank, .how-to-use, .focus, footer {
     padding: 0 40px;
   }
+
+  .how-to-use {
+    padding: 152px 40px;
+  }
 }
 @media (max-width: 1160px) {
   .light-paragraph {
@@ -1019,7 +1040,7 @@ footer .footer_content_item .pci .image {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 0;
-    margin: 0 auto;
+    margin: 0 auto 0 0;
   }
   .main_content_benefits.mobile .border {
     transform: none;
@@ -1174,8 +1195,8 @@ footer .footer_content_item .pci .image {
     max-width: 25%;
     width: 150px;
     height: 150px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
   .bank_content--achievements-item .wrapper:nth-of-type(2n) {
     margin: 0;
@@ -1224,6 +1245,403 @@ footer .footer_content_item .pci .image {
   }
   .how-to-use_content_item:nth-of-type(2n) {
     margin: 0;
+  }
+
+  .focus_content {
+    padding-top: 112px;
+  }
+  .focus_content .additional-header.mobile {
+    display: block;
+    margin-bottom: 48px;
+  }
+  .focus_content_item:first-child {
+    margin-bottom: 80px;
+  }
+  .focus_content_item:last-child {
+    padding-bottom: 112px;
+  }
+  .focus_content_item .wrapper {
+    position: relative;
+  }
+  .focus_content_item_title {
+    max-width: 270px;
+    margin: auto;
+  }
+  .focus_content_item_title .additional-header {
+    display: none;
+  }
+  .focus_content_item_title .light-paragraph {
+    font-size: 20px;
+  }
+  .focus_content_item .questions {
+    padding-bottom: 48px;
+  }
+  .focus_content_item .questions_item {
+    margin-bottom: 16px;
+  }
+  .focus_content_item .questions_item p {
+    font-size: 18px;
+  }
+
+  footer {
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer .footer_content_item--social {
+    margin-top: 19px;
+    margin-bottom: 51px;
+  }
+  footer .subscription {
+    font-size: 18px;
+  }
+  footer .subscription_form {
+    margin-bottom: 150px !important;
+  }
+  footer .subscription_form--email {
+    flex-direction: column;
+  }
+  footer .subscription_form--email input {
+    width: 100% !important;
+    margin-bottom: 16px;
+  }
+
+  header .header_content_buttons {
+    display: none;
+  }
+  header .header_content_buttons_mobile {
+    display: flex;
+    margin: auto 0;
+  }
+  header .header_content_buttons_mobile a:first-child {
+    margin-right: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .light-paragraph {
+    font-size: 15px;
+  }
+
+  .additional-header {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .button {
+    font-size: 14px;
+    padding: 18px 0;
+  }
+
+  .button-secondary span {
+    font-size: 14px;
+  }
+
+  header, .main, .interface_content, .video, .benefits, .bonuses_content, .bank, .how-to-use, .focus, footer {
+    padding: 0 16px;
+  }
+
+  header {
+    padding-top: 40px;
+  }
+  header .header_content_logo {
+    max-width: 164px;
+  }
+  header .header_content_options {
+    display: none;
+  }
+  header .header_content_options.mobile {
+    display: flex;
+    justify-content: center;
+  }
+  header .header_content_options .option {
+    padding-bottom: 19px;
+  }
+
+  .main .main_content .main_content_titleForm h1 .normal, .main .main_content .main_content_titleForm h1 .bolder, .main .main_content .main_content_titleForm h1 .bold {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 42px;
+  }
+  .main .main_content .main_content_titleForm ul {
+    flex-direction: column;
+  }
+  .main .main_content .main_content_titleForm ul li {
+    text-align: left;
+    max-width: 100%;
+    display: flex;
+  }
+  .main .main_content .main_content_titleForm ul li img {
+    margin-right: 22px;
+  }
+  .main .main_content .main_content_titleForm .mobile-wrapper {
+    flex-direction: column;
+  }
+  .main .main_content .main_content_titleForm .mobile-wrapper .form_block {
+    order: 1;
+  }
+  .main .main_content .main_content_titleForm .mobile-wrapper .main_content_benefits.mobile {
+    order: 2;
+    margin: auto;
+  }
+  .main .form_block {
+    margin-bottom: 40px;
+  }
+  .main .form_block .form {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .main .form_block .border {
+    display: none;
+  }
+
+  .map {
+    background: none;
+    margin-top: 80px;
+  }
+
+  .map_content--people {
+    display: none;
+  }
+
+  .map_content_title {
+    white-space: normal;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .map_content .button {
+    width: 100%;
+  }
+
+  .functions .additional-header {
+    max-width: 70%;
+    margin: auto;
+  }
+  .functions_items {
+    display: block;
+  }
+  .functions_items--item {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 48px;
+  }
+  .functions_items--item .title {
+    font-size: 20px;
+  }
+  .functions .description {
+    font-size: 18px;
+    margin-top: 16px;
+    margin-bottom: 56px;
+  }
+
+  .quote {
+    padding: 0;
+    padding-bottom: 114px;
+  }
+  .quote_main {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+  .quote_main::before {
+    left: 0;
+    top: -45px;
+    font-size: 50px;
+  }
+  .quote_add {
+    font-size: 20px;
+    margin-left: 30px;
+  }
+  .quote_add::after {
+    right: 0;
+    bottom: -20px;
+    font-size: 50px;
+  }
+
+  .interface_content::before {
+    left: -80px;
+  }
+  .interface_content::after {
+    background-image: url("../images/Rectangle222.png");
+    width: 55px;
+    height: 55px;
+  }
+  .interface .title--additional {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+  .interface .description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .video {
+    padding: 0;
+  }
+
+  .video_content {
+    flex-direction: column;
+    margin: 80px 0;
+  }
+  .video_content .additional-header {
+    flex-basis: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .video_content--items {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .video_content--items p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 10px 30px;
+  }
+  .video_content--items_video {
+    margin-left: 0;
+    margin-top: 35px;
+  }
+
+  .benefits_content__format {
+    display: block;
+  }
+  .benefits_content__format .or {
+    margin: 33px auto;
+  }
+
+  .bonuses .additional-header {
+    font-size: 22px;
+  }
+
+  .bonuses_content::before {
+    left: -80px;
+  }
+  .bonuses_content::after {
+    background-image: url("../images/Rectangle222.png");
+    width: 55px;
+    height: 55px;
+  }
+  .bonuses_content div {
+    padding: 80px 0;
+  }
+
+  .bank_content .additional-header {
+    margin: 16px 0 40px 0;
+  }
+  .bank_content .light-paragraph {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: left;
+  }
+  .bank_content--apibank-item {
+    text-align: center;
+    padding: 24px 16px;
+  }
+  .bank_content--apibank-item p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .bank_content--apibank-item:first-child {
+    display: block;
+  }
+  .bank_content--apibank-item:first-child img {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+  .how-to-use {
+    padding: 80px 16px;
+  }
+  .how-to-use_content {
+    flex-direction: column;
+  }
+  .how-to-use_content_item {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .how-to-use_content_item div:first-child {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .how-to-use_content_item div:first-child div:first-child {
+    margin-right: 10px;
+  }
+  .how-to-use_content_item div:first-child .title {
+    font-size: 18px;
+    margin: 0;
+  }
+  .how-to-use_content_item div:first-child .light-paragraph {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .focus_content {
+    padding-top: 80px;
+  }
+  .focus_content_item:first-child {
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .focus_content_item:last-child h3 {
+    margin-bottom: 40px;
+  }
+  .focus_content_item_title {
+    max-width: 100%;
+  }
+  .focus_content_item_title .additional-header {
+    display: none;
+  }
+  .focus_content_item_title .light-paragraph {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  .focus_content_item .wrapper {
+    flex-direction: column;
+  }
+  .focus_content_item .questions_item {
+    padding: 24px;
+  }
+  .focus_content_item .questions_item p {
+    font-size: 16px;
+    text-align: left;
+    margin-right: 20px;
+  }
+  .focus_content_item .questions_item button {
+    height: 20px;
+    width: 20px;
+  }
+  .focus_content_item .questions_item button img {
+    width: 100%;
+    height: 100%;
+  }
+  .focus_content .form_block .form {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  .focus_content .form_block .border {
+    display: none;
+  }
+
+  footer {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+  footer .footer_content .wrapper {
+    flex-direction: column;
+  }
+  footer .footer_content_item {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+  footer .wrapper:last-child .footer_content_item:first-child {
+    order: 2;
+  }
+  footer .wrapper:last-child .footer_content_item:last-child {
+    order: 1;
+    margin: 48px 0;
   }
 }
 
