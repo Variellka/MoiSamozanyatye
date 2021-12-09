@@ -307,32 +307,48 @@
         <div class="bank_content--achievements">
           <p>Партнеры</p>
           <div class="bank_content--achievements-item">
-            <div class="wrapper">
-              <div class="image">
-                <img src="images/Frame.png"/>
-              </div>
+            <div class="partner" >
+              <div class="image" style="background-image: url(images/Frame.png)"></div>
             </div>
-            <div class="wrapper"><div class="image"><img src="images/TinkoffBank_logo.png"/></div></div>
-            <div class="wrapper"><div class="image"><img src="images/gasprom.png"/></div></div>
-            <div class="wrapper"><div class="image"><img src="images/AkBars_logo.png"/></div></div>
-            <div class="wrapper"><div class="image"><img src="images/AlfaBank_logo.png"/></div></div>
-            <div class="wrapper"><div class="image"><img src="images/image%2012.png"/></div></div>
+            <div class="partner" >
+              <div class="image" style="background-image: url(images/TinkoffBank_logo.png)"></div>
+            </div>
+            <div class="partner" >
+              <div class="image" style="background-image: url(images/gasprom.png)"></div>
+            </div>
+            <div class="partner" >
+              <div class="image" style="background-image: url(images/AkBars_logo.png)"></div>
+            </div>
+            <div class="partner" >
+              <div class="image" style="background-image: url(images/AlfaBank_logo.png)"></div>
+            </div>
+            <div class="partner" >
+              <div class="image" style="background-image: url(images/image%2012.png)"></div>
+            </div>
           </div>
         </div>
         <div class="bank_content--achievements">
           <p>Награды</p>
-          <div class="bank_content--achievements-item mobile-view">
-            <div class="wrapper">
-              <div class="image"><img src="images/Mask%20Group.png"/></div>
+          <div class="bank_content--achievements-item winners">
+            <div class="partner achievement" >
+              <div class="image" style="background-image: url(images/Mask%20Group.png)"></div>
+              <p>Победитель
+                FINAWARD 2021</p>
             </div>
-            <div class="wrapper">
-              <div class="image"><img src="images/nagradaVisa.png"/></div>
+            <div class="partner achievement" >
+              <div class="image" style="background-image: url(images/nagradaVisa.png)"></div>
+              <p>Призер Visa
+                Everywhere
+                Initiative 2019
+                в России</p>
             </div>
-            <div class="wrapper">
-              <div class="image"><img src="images/What%20the%20Tech%201.png"/></div>
+            <div class="partner achievement" >
+              <div class="image" style="background-image: url(images/What%20the%20Tech%201.png)"></div>
+              <p>Финалист конкурса стартапов KPMG — What the Tech</p>
             </div>
-            <div class="wrapper">
-              <div class="image"><img src="images/Group%20240.png"/></div>
+            <div class="partner  achievement" >
+              <div class="image" style="background-image: url(images/Group%20240.png)"></div>
+              <p>Финалист технологического конкурса Impact Challenge</p>
             </div>
           </div>
         </div>
@@ -422,19 +438,31 @@
           <div class="questions">
             <div class="questions_item">
               <p>Как проводятся проверки?</p>
-              <button><img src="images/plus.png" /></button>
+              <button class="answer" type="button"><img src="images/plus.png" /></button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
             </div>
             <div class="questions_item">
               <p>Что такое «Мои самозанятые»?</p>
-              <button><img src="images/plus.png" /></button>
+              <button class="answer" type="button" class="answer" type="button"><img src="images/plus.png" /></button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
             </div>
             <div class="questions_item">
               <p>Как осуществляются выплаты?</p>
-              <button><img src="images/plus.png" /></button>
+              <button class="answer" type="button"><img src="images/plus.png" /></button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
             </div>
             <div class="questions_item">
               <p>Как получить доступ к личному кабинету?</p>
-              <button><img src="images/plus.png" /></button>
+              <button class="answer" type="button" ><img src="images/plus.png" /></button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
             </div>
           </div>
           <button class="button-secondary"><span>Показать все 12 вопросов</span></button>
@@ -520,5 +548,21 @@
         </div>
       </div>
     </footer>
+  <script type="text/javascript">
+    let acc = document.getElementsByClassName("answer");
+    let i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
   </body>
 </html>

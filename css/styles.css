@@ -638,18 +638,17 @@
 .bank_content--apibank-item:first-child img {
   margin-right: 32px;
   height: fit-content;
+  max-width: 20%;
 }
 .bank_content--apibank-item:last-child img {
   margin-top: 10px;
+  max-height: 80px;
 }
 .bank_content--apibank-item p {
   color: #262626;
   font-weight: 500;
   font-size: 20px;
   line-height: 150%;
-}
-.bank_content--achievements {
-  padding-bottom: 64px;
 }
 .bank_content--achievements p {
   font-weight: bold;
@@ -658,34 +657,39 @@
   color: #262626;
   margin-bottom: 32px;
 }
-.bank_content--achievements:last-child {
-  padding-bottom: 152px;
-}
 .bank_content--achievements-item {
-  display: flex;
-  justify-content: start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
 }
-.bank_content--achievements-item .wrapper {
-  background: #FFFFFF;
+.bank_content--achievements-item .partner .image {
+  background: no-repeat #FFFFFF center;
+  min-height: 175px;
+  width: 175px;
   box-shadow: 0px 0px 32px rgba(28, 39, 79, 0.1);
   border-radius: 8px;
-  width: 175px;
-  height: 175px;
-  max-width: 20%;
-  display: flex;
-  align-items: center;
 }
-.bank_content--achievements-item .wrapper .description {
+.bank_content--achievements-item .partner p {
   display: none;
 }
-.bank_content--achievements-item .wrapper:nth-of-type(2n) {
-  margin: 0 20px;
+.bank_content--achievements-item .partner:hover p {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  line-height: 21px;
+  margin-top: 10px;
+  max-width: 175px;
 }
-.bank_content--achievements-item .wrapper .image {
-  margin: auto;
+.bank_content--achievements-item .partner:hover.achievement .image:nth-child(1) {
+  background: no-repeat center radial-gradient(50% 50% at 50% 50%, #214777 0%, #0F1E31 100%);
 }
-.bank_content--achievements-item .wrapper .image img {
-  max-width: 150px;
+.bank_content--achievements-item .partner:hover.achievement .image:nth-child(2) {
+  background: radial-gradient(50% 50% at 50% 50%, #1A388D 0%, #1B1E5C 100%);
+}
+.bank_content--achievements-item .partner:hover.achievement .image:nth-child(3) {
+  background: radial-gradient(50% 50% at 50% 50%, #843495 0%, #49217F 100%);
+}
+.bank_content--achievements-item .partner:hover.achievement .image:nth-child(4) {
+  background: radial-gradient(50% 50% at 50% 50%, #2C9F67 0%, #1A633C 100%);
 }
 
 .how-to-use {
@@ -780,17 +784,25 @@
 .focus_content_item .questions {
   padding-bottom: 64px;
 }
+.focus_content_item .questions .panel {
+  padding-top: 20px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  text-align: left;
+}
 .focus_content_item .questions_item {
   background: #FFFFFF;
   box-shadow: 0px 0px 32px rgba(28, 39, 79, 0.1);
   border-radius: 12px;
   width: 100%;
-  height: 88px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 24px;
-  padding: 0 40px;
+  padding: 30px 40px;
+  flex-wrap: wrap;
 }
 .focus_content_item .questions_item p {
   font-weight: 600;
@@ -834,7 +846,6 @@ footer .footer_content_item--logo {
   height: 38px;
 }
 footer .footer_content_item--logo img {
-  width: 100%;
   height: 100%;
 }
 footer .footer_content_item--social {
@@ -946,6 +957,9 @@ footer .footer_content_item .pci {
 }
 footer .footer_content_item .pci .image {
   margin-right: 21px;
+}
+footer .footer_content_item .pci .image img {
+  max-height: 80px;
 }
 
 @media (max-width: 1200px) {
@@ -1189,36 +1203,40 @@ footer .footer_content_item .pci .image {
     font-size: 18px;
   }
   .bank_content--achievements-item {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
-  .bank_content--achievements-item .wrapper {
-    max-width: 25%;
-    width: 150px;
-    height: 150px;
+  .bank_content--achievements-item .partner {
     margin-right: 20px;
     margin-bottom: 20px;
   }
-  .bank_content--achievements-item .wrapper:nth-of-type(2n) {
-    margin: 0;
-    margin-right: 20px;
-  }
-  .bank_content--achievements-item .wrapper .image {
+  .bank_content--achievements-item .partner:hover p {
     max-width: 150px;
-    padding: 15px;
   }
-  .bank_content--achievements-item .wrapper .image img {
-    width: 100%;
+  .bank_content--achievements-item .partner .image {
+    background: no-repeat #FFFFFF center;
+    min-height: 150px;
+    width: 150px;
+    box-shadow: 0px 0px 32px rgba(28, 39, 79, 0.1);
+    border-radius: 8px;
   }
-  .bank_content--achievements .mobile-view .wrapper:nth-child(1) {
-    background: radial-gradient(50% 50% at 50% 50%, #214777 0%, #0F1E31 100%);
+  .bank_content--achievements-item .partner p {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+    margin-top: 10px;
+    max-width: 150px;
   }
-  .bank_content--achievements .mobile-view .wrapper:nth-child(2) {
+  .bank_content--achievements-item .partner.achievement .image:nth-child(1) {
+    background: no-repeat center radial-gradient(50% 50% at 50% 50%, #214777 0%, #0F1E31 100%);
+  }
+  .bank_content--achievements-item .partner.achievement .image:nth-child(2) {
     background: radial-gradient(50% 50% at 50% 50%, #1A388D 0%, #1B1E5C 100%);
   }
-  .bank_content--achievements .mobile-view .wrapper:nth-child(3) {
+  .bank_content--achievements-item .partner.achievement .image:nth-child(3) {
     background: radial-gradient(50% 50% at 50% 50%, #843495 0%, #49217F 100%);
   }
-  .bank_content--achievements .mobile-view .wrapper:nth-child(4) {
+  .bank_content--achievements-item .partner.achievement .image:nth-child(4) {
     background: radial-gradient(50% 50% at 50% 50%, #2C9F67 0%, #1A633C 100%);
   }
 
@@ -1548,6 +1566,35 @@ footer .footer_content_item .pci .image {
   .bank_content--apibank-item:first-child img {
     margin-right: 0;
     margin-bottom: 16px;
+  }
+  .bank_content--achievements-item {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+  .bank_content--achievements-item.winners {
+    display: block;
+  }
+  .bank_content--achievements-item .partner {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  .bank_content--achievements-item .partner:nth-of-type(2n) {
+    margin-right: 0;
+  }
+  .bank_content--achievements-item .partner .image {
+    background: no-repeat #FFFFFF center;
+    min-height: 167px;
+    width: 164px;
+    box-shadow: 0px 0px 32px rgba(28, 39, 79, 0.1);
+    border-radius: 8px;
+  }
+  .bank_content--achievements-item .partner.achievement {
+    display: flex;
+  }
+  .bank_content--achievements-item .partner.achievement p {
+    max-width: 40%;
+    margin-left: 20px;
+    text-align: left;
+    margin: auto;
   }
 
   .how-to-use {
