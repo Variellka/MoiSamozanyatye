@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/*
+Theme Name: MYSMZ
+Theme URI: https://mysmz.ru/
+Author: RedFox
+Author URI: https://redfox.by/
+Requires at least: 5.3
+Tested up to: 5.8
+Requires PHP: 7.3
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: MYSMZ
+*/
+html {
+    scroll-behavior: smooth;
+}
+footer p .green a{
+    color: #00D392;
+    font-weight: 400;
+}
+footer .footer_content_item .subscription_form--radio label{
+    display: flex;
+    margin-right: 32px;
+    font-size: 16px;
+}
+.wpcf7-list-item{
+    margin:0!important;
+}

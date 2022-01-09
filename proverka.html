@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Check Status</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-datepicker3.min.css" rel="stylesheet" />
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Serif+Pro:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script></head>
+<body>
+<header class="header">
+    <div class="header_content">
+        <div class="header_content_logo">
+            <img src="images/Logo.png" alt="logo" />
+        </div>
+        <div class="header_content_options">
+            <p class="option">Бизнесу</p>
+            <a   class="option" href="#">Самозанятым</a>
+        </div>
+        <div class="header_content_buttons">
+            <a href="tel:+74995530977" class="header_content_buttons--tel">+7 (499) 553-09-77</a>
+            <a href="#" class="header_content_buttons--login button">Войти</a>
+        </div>
+        <div class="header_content_buttons_mobile">
+            <a href="tel:+74995530977" class=""><img src="images/Group%203257.png"/></a>
+            <a href="#" class=""><img src="images/Group%203260.png"/></a>
+        </div>
+    </div>
+    <div class="header_content_options mobile">
+        <p class="option">Бизнесу</p>
+        <a   class="option" href="#">Самозанятым</a>
+    </div>
+</header>
+<div class="self-employed-check">
+    <div class="self-employed-check_content">
+        <div class="breadcrumbs">
+            <a href="#">Главная</a>
+            <a href="#">Проверить статус самозанятого</a>
+        </div>
+        <div class="check-status">
+            <h1>Проверить статус самозанятого</h1>
+            <p class="paragraph">Проверьте, является ли исполнитель самозанятым на определенную дату</p>
+            <form class="calendar-form">
+                <div class="calendar-form_inputs">
+                    <div>
+                        <input placeholder="Укажите ИНН исполнителя" class="INN"/>
+                        <p class="error-message">ИНН должен состоять из 12 цифр</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class='col-md-6 col-sm-12'>
+                                <div class="form-group">
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' class="form-control" placeholder="На какую дату хотите узнать статус?"/>
+                                        <span class="input-group-addon">
+									   <span class="glyphicon glyphicon-calendar"></span>
+									   </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="button" type="submit">Проверить</button>
+                </div>
+                <div class="results">
+                    <p class="title">Результат</p>
+                    <div class="no-results"><p>Заполните поле ИНН, выберите дату и нажмите на кнопку «Проверить»</p></div>
+                    <div class="success-result">
+                        <img src="images/Group%203270.png" alt="success"/>
+                        <p>На 24.12.2021 исполнитель с ИНН 239213492661 <span>является</span> самозанятым</p>
+                    </div>
+                    <div class="error-result">
+                        <img src="images/Group%2032701.png" alt="success"/>
+                        <p>На 24.12.2021 исполнитель с ИНН 239213492661 <span>не является</span> самозанятым</p>
+                    </div>
+                </div>
+            </form>
+            <div class="automatic-check">
+                <div class="text">
+                    <p class="title">Автоматическая проверка статуса перед выплатами</p>
+                    <p class="paragraph">Наш сервис автоматически проверяет статус самозанятого перед каждой выполатой. Система не пропустит платеж, если исполнитель потерял статус самозанятого. Оставте заявку – и делайте выплаты удобно
+                        и не рискуя</p>
+                </div>
+                <div class="mobile-wrapper">
+                    <p class="paragraph mobile">Наш сервис автоматически проверяет статус самозанятого перед каждой выполатой. Система не пропустит платеж, если исполнитель потерял статус самозанятого. Оставте заявку – и делайте выплаты удобно
+                        и не рискуя</p>
+                    <div class="form_block">
+                        <div class="border">
+                            <img src="images/Rectangle.png">
+                        </div>
+                        <div class="form">
+                            <form>
+                                <p class="title">Оставьте заявку</p>
+                                <div>
+                                    <img src="images/account_circle_24px.png" alt="icon"/>
+                                    <input placeholder="Ваше имя"/>
+                                </div>
+                                <div>
+                                    <img src="images/stay_current_portrait_24px.png" alt="icon"/>
+                                    <input placeholder="Номер телефона"/>
+                                </div>
+                                <div>
+                                    <img src="images/alternate_email_24px.png" alt="icon"/>
+                                    <input placeholder="Email"/>
+                                </div>
+                                <div>
+                                    <img src="images/domain_24px.png" alt="icon"/>
+                                    <input placeholder="Компания"/>
+                                </div>
+                                <p class="personal">Оставляя заявку, я даю <a href="#">согласие</a> на обработку моих персональных данных в соответствии с <a href="#">политикой конфиденциальности</a></p>
+                                <button type="submit" class="button">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="seo">SEO текст. Являясь всего лишь частью общей картины, активно развивающиеся страны третьего мира, превозмогая сложившуюся непростую экономическую ситуацию, обнародованы. В своём стремлении повысить качество жизни, они забывают, что постоянное информационно-пропагандистское обеспечение нашей деятельности создаёт предпосылки для вывода текущих активов. Задача организации, в особенности же внедрение современных методик однозначно определяет каждого участника как способного принимать собственные решения касаемо экономической целесообразности принимаемых решений</p>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer_content">
+        <div class="wrapper">
+            <div class="footer_content_item">
+                <div class="footer_content_item--logo">
+                    <img src="images/logoWhite.png" alt="logo" />
+                </div>
+                <p><strong>Адрес местонахождения и почтовый адрес</strong>
+                <p>121 205, г. Москва, Территория инновационного центра Сколково,
+                    ул. Луговая, д. 4, корп. 5, эт. 3, пом. 27</p>
+                <div class="footer_content_item--social">
+                    <a href="#"><img src="images/instagram.png"/></a>
+                    <a href="#"><img src="images/Facebook.png"/></a>
+                    <a href="#"><img src="images/vk.png"/></a>
+                </div>
+                <p>Расчеты между заказчиками и самозанятыми <br>осуществляются через банки-партнеры:</p>
+                <div class="footer_content_item--banks">
+                    <div class="footer_content_item--banks_item">
+                        <p><strong>АО «Альфа-Банк»</strong></p>
+                        <p>лицензия Банка России № 1326 от 16 января 2015 г.</p>
+                    </div>
+                    <div class="footer_content_item--banks_item">
+                        <p><strong>АО «Тинькофф Банк»</strong></p>
+                        <p>лицензия Банка России № 2673 от 24 марта 2015 г.</p>
+                    </div>
+                    <div class="footer_content_item--banks_item">
+                        <p><strong>ПАО Банк «ФК Открытие»</strong></p>
+                        <p>лицензия Банка России № 2209 от 24.11.2014 г.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer_content_item">
+                <p class="subscription">Подписаться на рассылку</p>
+                <form class="subscription_form">
+                    <div class="subscription_form--radio">
+                        <label class="form-control-custom">
+                            <input type="radio" name="type" />
+                            Бизнес
+                        </label>
+                        <label class="form-control-custom">
+                            <input type="radio" name="type" />
+                            Самозанятый
+                        </label>
+                    </div>
+                    <div class="subscription_form--email">
+                        <input type="email"  placeholder="Ваш email" name="email"/>
+                        <button class="button" type="submit">Подписаться</button>
+                    </div>
+                </form>
+                <div class="pci">
+                    <div class="image">
+                        <img src="images/image%2027.png"/>
+                    </div>
+                    <p><span class="green">Сертификат соответствия</span> стандарту PCI DSS</p>
+                </div>
+                <p class="license"><span class="green">Лицензия №173 228</span> на предоставление телематических услуг связи</p>
+                <p class="license"><span class="green">Лицензия ФСБ №0016563</span> на разработку криптографии</p>
+                <p class="license"><span class="green">Лицензия №2014</span> на деятельность по разработке и производству средства защиты конфиденциальной информации (ФСТЭК)</p>
+                <p class="license"><span class="green">Лицензия №3948</span> на деятельность по технической защите конфиденциальной информации (ФСТЭК)</p>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="footer_content_item">
+                <div class="footer_content_item--copyright">
+                    <p>©2021</p>
+                    <p>Цифровые банковские платформы (ООО)</p>
+                    <p>Open API service LLC</p>
+                </div>
+            </div>
+            <div class="footer_content_item">
+                <div class="footer_content_item--law">
+                    <p><span class="green">Правовая информация</span></p>
+                    <p><span class="green">Политика конфиденциальности</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#datetimepicker1").datepicker();
+    });
+</script>
+</body>
+</html>
